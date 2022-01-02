@@ -1,6 +1,5 @@
 pipeline {
-  ...
-  stages {
+   stages {
     stage('Build') {
       steps {
         echo 'Hello welcome to Jenkins pipeline'
