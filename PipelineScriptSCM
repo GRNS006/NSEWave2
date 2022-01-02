@@ -1,11 +1,16 @@
-Pipeline {
-   agent any 
-       stages {
-         stage("build") {
-         steps {
-           echo "welcome to Declarative Jenkins pipeline"
-           }
-           }
-           }
-           }
+pipeline {
+  ...
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Hello welcome to Jenkins pipeline'
+      }
+    }
+    stage('git clone') {
+      steps {
+        git clone "https://github.com/GRNS006/NSEWave2.git"
+      }
+    }
+  }
+}
       
